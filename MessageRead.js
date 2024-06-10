@@ -3,11 +3,11 @@
 (function () {
 
     Office.onReady(function () {
-        // Office is ready
+     var offi = Office.context.mailbox.item;
         $(document).ready(function () {
         if(Office.context.mailbox.item != null)
         {
-            loadItemProps(Office.context.mailbox.item);
+            loadItemProps(offi);
         }else 
         {
          $('#item-id').text("undefined");
@@ -19,6 +19,12 @@
         });
     });
 
+    function attachmentFunction()
+    {
+
+
+    }
+    
     function loadItemProps(item) {
         // Write message property values to the task pane
         $('#item-id').text(item.itemId);
