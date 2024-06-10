@@ -5,8 +5,17 @@
     Office.onReady(function () {
         // Office is ready
         $(document).ready(function () {
-            // The document is ready
+        if(Office.context.mailbox.item != null)
+        {
             loadItemProps(Office.context.mailbox.item);
+        }else 
+        {
+         $('#item-id').text("undefined");
+        $('#item-subject').text("undefined");
+        $('#item-internetMessageId').text("undefined");
+        }
+        
+        
         });
     });
 
