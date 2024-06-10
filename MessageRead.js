@@ -3,7 +3,7 @@
 (function () {
 
     Office.onReady(function () {
-     var offi = Office.context.mailbox.item;
+     item offi = Office.context.mailbox.item;
         $(document).ready(function () {
         if(Office.context.mailbox.item != null)
         {
