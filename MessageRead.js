@@ -3,11 +3,11 @@
 (function () {
 
     Office.onReady(function () {
-     item offi = Office.context.mailbox.item;
+
         $(document).ready(function () {
         if(Office.context.mailbox.item != null)
         {
-            loadItemProps(offi);
+            loadItemProps(Office.context.mailbox.item;);
         }else 
         {
          $('#item-id').text("undefined");
