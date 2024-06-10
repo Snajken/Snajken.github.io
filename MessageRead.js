@@ -18,13 +18,6 @@
         
         });
     });
-
-    function attachmentFunction()
-    {
-
-
-    }
-    
     function loadItemProps(item) {
         // Write message property values to the task pane
         $('#item-id').text(item.itemId);
