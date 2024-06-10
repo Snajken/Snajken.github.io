@@ -5,16 +5,10 @@
     Office.onReady(function () {
 
         $(document).ready(function () {
-        if(Office.context.mailbox.item != null)
-        {
-            loadItemProps(Office.context.mailbox.item;);
-        }else 
-        {
-         $('#item-id').text("undefined");
-        $('#item-subject').text("undefined");
-        $('#item-internetMessageId').text("undefined");
-        }
-        
+            // The document is ready
+            loadItemProps(Office.context.mailbox.item);
+        });
+    });
         
         });
     });
