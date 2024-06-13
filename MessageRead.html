@@ -15,9 +15,9 @@
     <script>
          var testObject = ["project 1", "project 2", "project 3"]
          window.onload = function(){   
-            var projectSel = document.getElementById("fileForm");
+            //var projectSel = ;
             for (var x in testObject){
-            projectSel.options[projectSel.options.length]= new Option(x,x);              
+            window.document.getElementById("fileForm").options[projectSel.options.length]= new Option(x,x);              
             }
         }
         
