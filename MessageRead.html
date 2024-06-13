@@ -85,10 +85,27 @@ if (item.attachments.length > 0) {
         outputString += "<BR>attachmentType: " + attachment.attachmentType;
         outputString += "<BR>isInline: " + attachment.isInline;
     }
+    function getAttachmentToken()
+    {
+    if (serviceRequest.attachmentToken == "") {
+        Office.context.mailbox.getCallbackTokenAsync(attachmentTokenCallback);
+    }
 }
 
+function attachmentTokenCallback(asyncResult)
+    {
+    if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+        // Cache the result from the server.
+        serviceRequest.attachmentToken = asyncResult.value;
+        serviceRequest.state = 3;
+        testAttachments();
+    } else {
+        showToast("Error", "Couldn't get callback token: " + asyncResult.error.message);
+    }
+}
+}
 console.log(outputString);
-      } 
+} 
    </script>
 
     <button class="button button1" onclick="attachmentFunction()">get attachment</button>
