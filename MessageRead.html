@@ -85,8 +85,7 @@
                 outputString += "<BR>attachmentType: " + attachment.attachmentType;
                 outputString += "<BR>isInline: " + attachment.isInline;
             }
-            getAttachmentToken();
-        }
+          }
     console.log(outputString);
 } 
          
@@ -94,7 +93,13 @@
 
     <button class="button button1" onclick="attachmentFunction()">get attachment</button>
 
-    
+     <form action="/url" method="GET">
+        <label>
+            Please enter the new filename
+            <input type="text" name="name" minlength="1" maxlength="30" required>
+        </label>
+        <button type="submit">Submit</button>  
+    </form>
 </body>
 
 </html>
