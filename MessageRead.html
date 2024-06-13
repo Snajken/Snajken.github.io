@@ -14,10 +14,11 @@
     <script src="MessageBanner.js" type="text/javascript"></script>
     <script>
          var testObject = ["project 1", "project 2", "project 3"]
+        
          window.onload = function(){   
-            //var projectSel = ;
+            var projectSel =document.getElementById('FiledeliveryLocation');
             for (var x in testObject){
-            window.document.getElementById("fileForm").options[ window.document.getElementById("fileForm").options.length]= new Option(x,x);              
+            projectSel.options[projectSel.options.length]= new Option(x,x);              
             }
         }
         
