@@ -84,13 +84,13 @@ function animate() {
 
         
         if (currentX / 2 > i) {
-            x = Math.abs(((mouse.mouseVariable / 2) / (Math.sqrt((currentX / 2) - i))) * ((mouse.mouseVariable / 10) / ((Math.sqrt((currentX / 2) - i)))));
+            x = Math.abs(((mouse.mouseVariable) / (Math.sqrt((currentX / 2) - i))) * ((mouse.mouseVariable / 10) / ((Math.sqrt((currentX / 2) - i)))));
                 if (x >= 30) {
                     x = -1 * (currentX / 2 - i) * (currentX / 2 - i) + mouse.mouseVariable;
                 }
             }
         if (currentX / 2 < i) {
-            x = Math.abs(((mouse.mouseVariable / 2) / (Math.sqrt(i - currentX / 2))) * ((mouse.mouseVariable / 10) / (Math.sqrt(i - currentX / 2))));
+            x = Math.abs(((mouse.mouseVariable) / (Math.sqrt(i - currentX / 2))) * ((mouse.mouseVariable / 10) / (Math.sqrt(i - currentX / 2))));
                 if (x >= 30) {
                     x = -1 * ((i - currentX / 2) * (i - currentX / 2)) + mouse.mouseVariable;
                 }
