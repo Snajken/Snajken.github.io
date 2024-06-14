@@ -68,10 +68,11 @@
     </form>
     <script>
         function attachmentFunction() {
-           
+        var output = "";        
         var projectSel =document.getElementById('FiledeliveryLocation');
         var size = projectSel.options.leangth;
-            projectSel.appendChild(size,size);
+            output += "new" + size;
+            projectSel.appendChild(output);
         }
 
     </script>
