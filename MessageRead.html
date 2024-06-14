@@ -66,6 +66,8 @@
     </label>
      <br><br>
         <button type="submit">Submit</button>  
+     <br><br>
+     <button  onclick="myFunction()" >Click Me!</button> 
     </form>
     <script>
         function attachmentFunction() {
@@ -74,6 +76,9 @@
       
             output += "new " + projectSel.options.length;
           projectSel.options[projectSel.options.length]= new Option(output,output);      
+        }
+        function myFunction(){
+            console.log(document.getElementById("fileForm").value;)
         }
 
     </script>
