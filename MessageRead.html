@@ -18,7 +18,7 @@
          window.onload = function(){   
             var projectSel =document.getElementById('FiledeliveryLocation');
             for (var x in testObject){
-            projectSel.options[projectSel.options.length]= new Option(x,x);              
+            projectSel.options[projectSel.options.length]= new Option(testObject[x],testObject[x]);              
             }
         }
         
