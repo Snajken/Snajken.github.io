@@ -70,7 +70,7 @@
                 var projectSel=document.getElementById('FiledeliveryLocation');
                 var value=projectSel.value;
                 output +=projectSel.options[projectSel.selectedIndex].text;
-                output += "."
+                output += "_"
                 output += document.getElementById("nameText").value;
                 localStorage.setItem("fileName",output);
                 console.log(localStorage.getItem("fileName"));
