@@ -80,6 +80,7 @@
           projectSel.options[projectSel.options.length]= new Option(output,output);      
             function submissionFunction()
             {
+                localStorage.clear();
                 var output="";
                  var projectSel =document.getElementById('FiledeliveryLocation');
                 var value=projectSel.value;
