@@ -16,7 +16,9 @@
 </head>
 <body>
   <h1>Did you know you are here?</h1>
-  File <?php echo $_POST["name"]; ?> <?php echo $_POST["ActiveProject"]; ?><br>
+  <p id="demo"></p>
+  
+  <script>document.getElementById("demo").innerHTML = localStoarge.getItem("fileName");</script>
   <canvas id="myCanvas" width="300" height="300" style="position:absolute; top:0; left:0;  z-index: 1;" >
      Your browser does not support HTML5 Canvas.
 </canvas> 
