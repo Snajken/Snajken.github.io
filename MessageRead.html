@@ -67,9 +67,9 @@
             {
                 localStorage.clear();
                 var output="";
-                 var projectSel =document.getElementById('FiledeliveryLocation');
+                var projectSel=document.getElementById('FiledeliveryLocation');
                 var value=projectSel.value;
-                 output+=projectSel.options[projectsel.selectedIndex].text;
+                output +=projectSel.options[projectsel.selectedIndex].text;
                 output += "."
                 output += document.getElementById("nameText").value;
                 localStorage.setItem("fileName",output);
