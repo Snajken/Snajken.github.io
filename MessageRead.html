@@ -61,7 +61,9 @@
 
             output += "new " + projectSel.options.length;
           projectSel.options[projectSel.options.length]= new Option(output,output);      
-            function submissionFunction()
+          }
+          
+         function submissionFunction()
             {
                 localStorage.clear();
                 var output="";
@@ -73,20 +75,19 @@
                 localStorage.setItem("fileName",output);
                 document.location.href= "https://snajken.github.io/Destination.html";
             }
-        }
  
-
     </script>
 
     <label>
           Please enter the new filename
           <input type="text" name="name" minlength="1" maxlength="30" id="nameText" required>
     </label>
+    <br><br>
  Projects:<select id="FiledeliveryLocation" name="ActiveProject">
           <option value="" selected="selected">null</option>
          </select>
 <h1>Outlook Send Data add-in</h1>
-        <button class="button2" onclick="submissionFunction()">Submit</button>  
+        <button class="button button2" onclick="submissionFunction()">Submit</button>  
      <br><br>
 
 
@@ -95,7 +96,7 @@
        
    
 
-        <br><br>
+        
     <button class="button button1" onclick="attachmentFunction()">get attachment</button>
 
 </body>
