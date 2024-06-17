@@ -54,24 +54,7 @@
 </head>
 <body class="ms-font-m ms-welcome">
      <h1>Outlook Send Data add-in</h1>
-    
-
-    <label>
-          Please enter the new filename
-          <input type="text" name="name" minlength="1" maxlength="30" id="nameText" required>
-    </label>
- Projects:<select id="FiledeliveryLocation" name="ActiveProject">
-          <option value="" selected="selected">null</option>
-         </select>
-<h1>Outlook Send Data add-in</h1>
-        <button class="button2" onclick="submissionFunction()">Submit</button>  
-     <br><br>
-
-
-   
-   
-       
-    <script>
+     <script>
         function attachmentFunction() {
         var output = "";        
         var projectSel =document.getElementById('FiledeliveryLocation');
@@ -94,6 +77,23 @@
  
 
     </script>
+
+    <label>
+          Please enter the new filename
+          <input type="text" name="name" minlength="1" maxlength="30" id="nameText" required>
+    </label>
+ Projects:<select id="FiledeliveryLocation" name="ActiveProject">
+          <option value="" selected="selected">null</option>
+         </select>
+<h1>Outlook Send Data add-in</h1>
+        <button class="button2" onclick="submissionFunction()">Submit</button>  
+     <br><br>
+
+
+   
+   
+       
+   
 
         <br><br>
     <button class="button button1" onclick="attachmentFunction()">get attachment</button>
