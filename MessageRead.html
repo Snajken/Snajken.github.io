@@ -20,7 +20,16 @@
             for (var x in testObject){
             projectSel.options[projectSel.options.length]= new Option(testObject[x],testObject[x]);              
             }
+
+
         }
+    var checkList = document.getElementById('list1');
+checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
+  if (checkList.classList.contains('visible'))
+    checkList.classList.remove('visible');
+  else
+    checkList.classList.add('visible');
+}
         
     </script>
 
@@ -76,28 +85,30 @@
                 console.log(localStorage.getItem("fileName"));
                 document.location.href= "https://snajken.github.io/Destination.html";
             }
- 
     </script>
+    <div id="list1" class="dropdown-check-list" tabindex="100">
+  <span class="anchor">Select Fruits</span>
+  <ul class="items">
+    <li><input type="checkbox" />Apple </li>
+    <li><input type="checkbox" />Orange</li>
+    <li><input type="checkbox" />Grapes </li>
+    <li><input type="checkbox" />Berry </li>
+    <li><input type="checkbox" />Mango </li>
+    <li><input type="checkbox" />Banana </li>
+    <li><input type="checkbox" />Tomato</li>
+  </ul>
+</div>
  Projects:<select id="FiledeliveryLocation" name="ActiveProject">
           <option value="" selected="selected">null</option>
          </select>
+       <br><br>
     <label>
           Please enter the new filename
           <input type="text" name="name" minlength="1" maxlength="30" id="nameText" required>
     </label>
-    <br><br>
-
 <h1>Outlook Send Data add-in</h1>
         <button class="button button2" onclick="submissionFunction()">Submit</button>  
      <br><br>
-
-
-   
-   
-       
-   
-
-        
     <button class="button button1" onclick="attachmentFunction()">get attachment</button>
 
 </body>
