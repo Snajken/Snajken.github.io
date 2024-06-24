@@ -115,7 +115,7 @@ for (var i = 0; i < canvas.width; i++) {
     c.lineTo(i, canvas.height / 1.5 - x);
     x = 0;
 }
-    if (Math.abs((currentX / 2) - boatX) < 50) {
+    if (Math.abs((currentX / 2) - boatX) < 50 && !newWave) {
 
         if (boatX > currentX / 2) {
             boatSpeed +=55  - Math.abs((currentX / 2) - boatX);
