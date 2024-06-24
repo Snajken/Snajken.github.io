@@ -24,7 +24,7 @@
 
         }
        
-}
+
         
     </script>
 
@@ -83,10 +83,11 @@
           var testAttach = ["Email content"]
     var checkList = document.getElementById('list1');
 checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
-  if (checkList.classList.contains('visible'))
-  { 
-      checkList.classList.remove('visible');
-  }else checkList.classList.add('visible');
+    if (checkList.classList.contains('visible'))
+     { 
+        checkList.classList.remove('visible');
+     }else checkList.classList.add('visible');
+}
     </script>
     <div id="list1" class="dropdown-check-list" tabindex="100">
   <span class="anchor">Select Data to Save</span>
