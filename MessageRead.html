@@ -142,16 +142,12 @@ body {
 </div>
 <script type="text/javascript">
     var checkList = document.getElementById('list1');
-var items = document.getElementById('items');
         checkList.getElementsByClassName('anchor')[0].onclick = function (evt) {
-            if (items.classList.contains('visible')){
-                items.classList.remove('visible');
-                items.style.display = "none";
+            if (checkList.classList.contains('visible')){
+                checkList.classList.remove('visible');
             }
-            
             else{
-                items.classList.add('visible');
-                items.style.display = "block";
+                checkList.classList.add('visible');
             }
             
             
